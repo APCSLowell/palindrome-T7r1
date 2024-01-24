@@ -37,14 +37,22 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
+  String Pawn="";
+   for (int i=word.length()-1;i>=0;i--){
+   for (char c = 'a'; c <= 'z'; c++) {
+    if (word.charAt(i)==c) 
+      Pawn =word.substring(i,i+1)+Pawn;
   //your code here
-  return word.equals(reverse(word));
+  return Pawn.equalsIgnoreCase(reverse(Pawn));
 }
 public String reverse(String str)
 {
     String ans = new String();
   for (int i=str.length()-1;i>=0;i--){
+    
+   
   ans=ans+str.substring(i,i+1);
+    
   }
   return ans;
 }
