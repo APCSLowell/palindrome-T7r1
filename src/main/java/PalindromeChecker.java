@@ -43,9 +43,12 @@ public boolean palindrome(String word)
    for (int c = 0; c <= 26; c++) {
     if (word.charAt(i)==abc[c]) 
       Pawn =word.substring(i,i+1)+Pawn;
+   }
+   }
   //your code here
   return Pawn.equalsIgnoreCase(reverse(Pawn));
 }
+     
 public String reverse(String str)
 {
     String ans = new String();
