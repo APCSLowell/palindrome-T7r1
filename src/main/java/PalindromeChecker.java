@@ -44,7 +44,7 @@ public String reverse(String str)
 {
     String ans = new String();
   for (int i=str.length()-1;i>=0;i--){
-  ans=ans+sWord.substring(i,i+1);
+  ans=ans+str.substring(i,i+1);
   }
   return ans;
 }
