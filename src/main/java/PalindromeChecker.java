@@ -41,7 +41,7 @@ public boolean palindrome(String word)
   String Pawn="";
    for (int i=word.length()-1;i>=0;i--){
    for (int c = 0; c < 26; c++) {
-    if (word.charAt(i).equalsIgnoreCase(abc[c]))
+    if (word.substring(i,i+1).equalsIgnoreCase(abc[c]))
       Pawn =word.substring(i,i+1)+Pawn;
    }
    }
