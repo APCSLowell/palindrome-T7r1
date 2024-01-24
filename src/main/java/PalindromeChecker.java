@@ -37,10 +37,11 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
+  char []abc="abcdefghijklmnopqrstuvwxyz".toCharArray();
   String Pawn="";
    for (int i=word.length()-1;i>=0;i--){
-   for (char c = 'a'; c <= 'z'; c++) {
-    if (word.charAt(i)==c) 
+   for (int c = 0; c <= 26; c++) {
+    if (word.charAt(i)==abc[c]) 
       Pawn =word.substring(i,i+1)+Pawn;
   //your code here
   return Pawn.equalsIgnoreCase(reverse(Pawn));
