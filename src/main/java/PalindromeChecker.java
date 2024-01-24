@@ -37,7 +37,7 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  char []abc="abcdefghijklmnopqrstuvwxyz".split("").join();
+  char []abc="abcdefghijklmnopqrstuvwxyz".split("").join(',');
   String Pawn="";
    for (int i=word.length()-1;i>=0;i--){
    for (int c = 0; c <= 26; c++) {
